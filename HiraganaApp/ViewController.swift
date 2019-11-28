@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         kanjiTextField.delegate = self
     }
     
+    //変換ボタンが押されたときの動作
     @IBAction func changeButton(_ sender: Any) {
         guard let kanji = kanjiTextField.text else {
             return
@@ -33,8 +34,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return
         }
         request()
+        
+        kanjiTextField.endEditing(true)
     }
     
+    //APIにリクエストを送る
     func request() {
         let parameters:[String: Any] = [
             "app_id": "8174a7e80130a47045408472f936b9cf4fa844a233eafc376ceb92b511226376",
@@ -54,9 +58,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //Returnが押されたときの動作
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        guard let kanji = kanjiTextField.text else {
+            return true
+        }
+        if kanji.isEmpty {
+            hiraganaTextView.text = "ぶんしょうをにゅうりょくしてください"
+            return true
+        }
+        request()
         return true
+    }
+    
+    //画面をタップするとキーボードを閉じる
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 
