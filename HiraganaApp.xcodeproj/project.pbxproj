@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074869F6359BB5E35AB98C76 /* Pods_HiraganaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D52A3B8A5C84711E74B0E2A /* Pods_HiraganaApp.framework */; };
+		A4CAF191238F56D40052D110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CAF190238F56D40052D110 /* AppDelegate.swift */; };
+		A4CAF193238F56D40052D110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CAF192238F56D40052D110 /* SceneDelegate.swift */; };
+		A4CAF195238F56D40052D110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CAF194238F56D40052D110 /* ViewController.swift */; };
+		A4CAF198238F56D40052D110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CAF196238F56D40052D110 /* Main.storyboard */; };
+		A4CAF19A238F56DA0052D110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CAF199238F56DA0052D110 /* Assets.xcassets */; };
+		A4CAF19D238F56DA0052D110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CAF19B238F56DA0052D110 /* LaunchScreen.storyboard */; };
+		A4CAF1A5238F669A0052D110 /* Rubi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CAF1A4238F669A0052D110 /* Rubi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D52A3B8A5C84711E74B0E2A /* Pods_HiraganaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B47CA6E949060DDC8F42E5C /* Pods-HiraganaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaApp.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaApp/Pods-HiraganaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8DBE3FAA21CA57FF8EA40E /* Pods-HiraganaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaApp.release.xcconfig"; path = "Target Support Files/Pods-HiraganaApp/Pods-HiraganaApp.release.xcconfig"; sourceTree = "<group>"; };
+		A4CAF18D238F56D40052D110 /* HiraganaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CAF190238F56D40052D110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4CAF192238F56D40052D110 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A4CAF194238F56D40052D110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4CAF197238F56D40052D110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4CAF199238F56DA0052D110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4CAF19C238F56DA0052D110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4CAF19E238F56DA0052D110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CAF1A4238F669A0052D110 /* Rubi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rubi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4CAF18A238F56D40052D110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074869F6359BB5E35AB98C76 /* Pods_HiraganaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A107E71BA2767BD6BD165AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D52A3B8A5C84711E74B0E2A /* Pods_HiraganaApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C3CBB02CD4DD21DA4E11031 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B47CA6E949060DDC8F42E5C /* Pods-HiraganaApp.debug.xcconfig */,
+				7F8DBE3FAA21CA57FF8EA40E /* Pods-HiraganaApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4CAF184238F56D40052D110 = {
+			isa = PBXGroup;
+			children = (
+				A4CAF18F238F56D40052D110 /* HiraganaApp */,
+				A4CAF18E238F56D40052D110 /* Products */,
+				4C3CBB02CD4DD21DA4E11031 /* Pods */,
+				3A107E71BA2767BD6BD165AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4CAF18E238F56D40052D110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4CAF18D238F56D40052D110 /* HiraganaApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4CAF18F238F56D40052D110 /* HiraganaApp */ = {
+			isa = PBXGroup;
+			children = (
+				A4CAF190238F56D40052D110 /* AppDelegate.swift */,
+				A4CAF192238F56D40052D110 /* SceneDelegate.swift */,
+				A4CAF194238F56D40052D110 /* ViewController.swift */,
+				A4CAF1A4238F669A0052D110 /* Rubi.swift */,
+				A4CAF196238F56D40052D110 /* Main.storyboard */,
+				A4CAF199238F56DA0052D110 /* Assets.xcassets */,
+				A4CAF19B238F56DA0052D110 /* LaunchScreen.storyboard */,
+				A4CAF19E238F56DA0052D110 /* Info.plist */,
+			);
+			path = HiraganaApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4CAF18C238F56D40052D110 /* HiraganaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CAF1A1238F56DA0052D110 /* Build configuration list for PBXNativeTarget "HiraganaApp" */;
+			buildPhases = (
+				CFE0B6E76EC004C6D06C90EA /* [CP] Check Pods Manifest.lock */,
+				A4CAF189238F56D40052D110 /* Sources */,
+				A4CAF18A238F56D40052D110 /* Frameworks */,
+				A4CAF18B238F56D40052D110 /* Resources */,
+				CA62024DFD1CF8AD9E15657E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiraganaApp;
+			productName = HiraganaApp;
+			productReference = A4CAF18D238F56D40052D110 /* HiraganaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4CAF185238F56D40052D110 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "KAZUMA NOHA";
+				TargetAttributes = {
+					A4CAF18C238F56D40052D110 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A4CAF188238F56D40052D110 /* Build configuration list for PBXProject "HiraganaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4CAF184238F56D40052D110;
+			productRefGroup = A4CAF18E238F56D40052D110 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4CAF18C238F56D40052D110 /* HiraganaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4CAF18B238F56D40052D110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CAF19D238F56DA0052D110 /* LaunchScreen.storyboard in Resources */,
+				A4CAF19A238F56DA0052D110 /* Assets.xcassets in Resources */,
+				A4CAF198238F56D40052D110 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA62024DFD1CF8AD9E15657E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiraganaApp/Pods-HiraganaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiraganaApp/Pods-HiraganaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaApp/Pods-HiraganaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFE0B6E76EC004C6D06C90EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiraganaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4CAF189238F56D40052D110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CAF195238F56D40052D110 /* ViewController.swift in Sources */,
+				A4CAF191238F56D40052D110 /* AppDelegate.swift in Sources */,
+				A4CAF193238F56D40052D110 /* SceneDelegate.swift in Sources */,
+				A4CAF1A5238F669A0052D110 /* Rubi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4CAF196238F56D40052D110 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4CAF197238F56D40052D110 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4CAF19B238F56DA0052D110 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4CAF19C238F56DA0052D110 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4CAF19F238F56DA0052D110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4CAF1A0238F56DA0052D110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4CAF1A2238F56DA0052D110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B47CA6E949060DDC8F42E5C /* Pods-HiraganaApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiraganaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazumanoha.HiraganaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4CAF1A3238F56DA0052D110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8DBE3FAA21CA57FF8EA40E /* Pods-HiraganaApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiraganaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazumanoha.HiraganaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4CAF188238F56D40052D110 /* Build configuration list for PBXProject "HiraganaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CAF19F238F56DA0052D110 /* Debug */,
+				A4CAF1A0238F56DA0052D110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4CAF1A1238F56DA0052D110 /* Build configuration list for PBXNativeTarget "HiraganaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CAF1A2238F56DA0052D110 /* Debug */,
+				A4CAF1A3238F56DA0052D110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4CAF185238F56D40052D110 /* Project object */;
+}
