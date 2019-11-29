@@ -19,19 +19,19 @@ class API {
     func request(text: String, completed: ((String) -> Void)?){
         
         let parameters:[String: Any] = [
-             "app_id": "8174a7e80130a47045408472f936b9cf4fa844a233eafc376ceb92b511226376",
-             "sentence": text,
-             "output_type": "hiragana"
+            "app_id": "8174a7e80130a47045408472f936b9cf4fa844a233eafc376ceb92b511226376",
+            "sentence": text,
+            "output_type": "hiragana"
         ]
-
-         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
-             guard let jsonData = response.data else {
-                 print("response err")
-                 return
-             }
-             let hiraganaData = try! JSONDecoder().decode(Rubi.self, from: jsonData)
-             print(hiraganaData.converted)
-             completed?(hiraganaData.converted)
-         }
+        
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
+            guard let jsonData = response.data else {
+                print("response err")
+                return
+            }
+            let hiraganaData = try! JSONDecoder().decode(Rubi.self, from: jsonData)
+            let hiragana = hiraganaData.converted
+            completed?(hiragana)
+        }
     }
 }

@@ -29,8 +29,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         
         let api = API()
-        api.request(text: kanji) { hiraganaData in
-            self.hiraganaTextView.text = hiraganaData
+        api.request(text: kanji) { hiragana in
+            self.hiraganaTextView.text = hiragana
         }
         //キーボードを閉じる
         kanjiTextField.endEditing(true)
