@@ -7,17 +7,11 @@
 //
 
 import UIKit
-import Alamofire
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var kanjiTextField: UITextField!
     @IBOutlet weak var hiraganaTextView: UITextView!
-    
-    let url = "https://labs.goo.ne.jp/api/hiragana"
-    let headers: HTTPHeaders = [
-        "Contenttype": "application/json"
-    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,29 +27,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             hiraganaTextView.text = "ぶんしょうをにゅうりょくしてください"
             return
         }
-        request()
+        
+        let api = API()
+        api.request(text: kanji) { hiraganaData in
+            self.hiraganaTextView.text = hiraganaData
+        }
         //キーボードを閉じる
         kanjiTextField.endEditing(true)
-    }
-    
-    //APIにリクエストを送る
-    func request() {
-        let parameters:[String: Any] = [
-            "app_id": "8174a7e80130a47045408472f936b9cf4fa844a233eafc376ceb92b511226376",
-            "sentence": kanjiTextField.text!,
-            "output_type": "hiragana"
-        ]
-        
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
-            guard let jsonData = response.data else {
-                print("response err")
-                return
-            }
-            let responseData = try! JSONDecoder().decode(Rubi.self, from: jsonData)
-            print(responseData.converted)
-            
-            self.hiraganaTextView.text = responseData.converted
-        }
     }
     
     //Returnが押されたときの動作
@@ -68,7 +46,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             hiraganaTextView.text = "ぶんしょうをにゅうりょくしてください"
             return true
         }
-        request()
+        let api = API()
+        api.request(text: kanji) { hiraganaData in
+            self.hiraganaTextView.text = hiraganaData
+        }
         return true
     }
     
