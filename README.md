@@ -1,8 +1,6 @@
 # HiraganaApp
 App for change from kanji to hiragana
 
-# ひらがな化アプリ
-
 ## Overview
 漢字の文章を入力するとひらがなの文章を出力します
 
