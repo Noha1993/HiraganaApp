@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return
         }
         request()
-        
+        //キーボードを閉じる
         kanjiTextField.endEditing(true)
     }
     

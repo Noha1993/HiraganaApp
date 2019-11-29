@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		074869F6359BB5E35AB98C76 /* Pods_HiraganaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D52A3B8A5C84711E74B0E2A /* Pods_HiraganaApp.framework */; };
 		A4CAF191238F56D40052D110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CAF190238F56D40052D110 /* AppDelegate.swift */; };
-		A4CAF193238F56D40052D110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CAF192238F56D40052D110 /* SceneDelegate.swift */; };
 		A4CAF195238F56D40052D110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CAF194238F56D40052D110 /* ViewController.swift */; };
 		A4CAF198238F56D40052D110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CAF196238F56D40052D110 /* Main.storyboard */; };
 		A4CAF19A238F56DA0052D110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CAF199238F56DA0052D110 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		7F8DBE3FAA21CA57FF8EA40E /* Pods-HiraganaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaApp.release.xcconfig"; path = "Target Support Files/Pods-HiraganaApp/Pods-HiraganaApp.release.xcconfig"; sourceTree = "<group>"; };
 		A4CAF18D238F56D40052D110 /* HiraganaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CAF190238F56D40052D110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4CAF192238F56D40052D110 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A4CAF194238F56D40052D110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4CAF197238F56D40052D110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4CAF199238F56DA0052D110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				A4CAF190238F56D40052D110 /* AppDelegate.swift */,
-				A4CAF192238F56D40052D110 /* SceneDelegate.swift */,
 				A4CAF194238F56D40052D110 /* ViewController.swift */,
 				A4CAF1A4238F669A0052D110 /* Rubi.swift */,
 				A4CAF196238F56D40052D110 /* Main.storyboard */,
@@ -211,7 +208,6 @@
 			files = (
 				A4CAF195238F56D40052D110 /* ViewController.swift in Sources */,
 				A4CAF191238F56D40052D110 /* AppDelegate.swift in Sources */,
-				A4CAF193238F56D40052D110 /* SceneDelegate.swift in Sources */,
 				A4CAF1A5238F669A0052D110 /* Rubi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
